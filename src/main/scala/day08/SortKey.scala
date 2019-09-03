@@ -13,7 +13,7 @@ object SortKey {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("SortKey").setMaster("local")
     val sc = new SparkContext(conf)
-    val file: RDD[String] = sc.textFile("/Volumes/Untitled\\ 1/1000phone/spark/sort.txt")
+    val file: RDD[String] = sc.textFile("/Users/newforesee/Intellij Project/Spark/src/sort.txt")
     val tuples = file.map(file => {
       val lines: Array[String] = file.split(" ")
       (Sorted(lines(0).toInt, lines(1).toInt), file)

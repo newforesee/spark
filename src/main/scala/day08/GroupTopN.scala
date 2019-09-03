@@ -11,7 +11,7 @@ object GroupTopN {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("GTopN").setMaster("local")
     val sc = new SparkContext(conf)
-    val lines = sc.textFile("/Volumes/Untitled\\ 1/1000phone/spark/score.txt")
+    val lines = sc.textFile("/Users/newforesee/Intellij Project/Spark/src/sort.txt")
     val tuples: RDD[(String, Int)] = lines.map(t => {
       val str = t.split(" ")
       (str(0), str(1).toInt)

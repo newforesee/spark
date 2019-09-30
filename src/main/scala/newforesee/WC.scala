@@ -1,9 +1,6 @@
 package newforesee
 
-import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Dataset, SparkSession}
-
-import scala.collection.mutable
 
 object WC {
   def main(args: Array[String]): Unit = {

@@ -3,7 +3,7 @@ package day07
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Transformtion {
+object FTransformtion {
   //利用map算子实现每个算子*2
   def map(): Unit = {
     val conf = new SparkConf().setAppName("map").setMaster("local")
